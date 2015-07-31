@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 10pt auto;
+  padding: 10pt ;
+  text-align: center;
+}
+
+h1 {
+  font-family: helvetica;
+  font-size: 22pt;
+}
+
+h2 {
+  font-family: helvetica;
+  font-size: 15pt;
+  text-align: center;
+}
+h3 {
+  font-family: helvetica;
+  font-size: 15pt;
+  text-align: left;
+}
+h4 {
+  font-family: helvetica;
+  font-size: 12pt;
+  text-align: left;
+}
+a {
+  color: #66CD9B;
+  font-family: helvetica;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-weight: bold;
+  text-align: center;
+}
+
+p.padding {
+  padding:10px;
+}
+
+div.relative {
+  position: relative;
+  left: 20px;
+  border: 3px solid #8AC007;
+  max-height: 150px;
+  max-width: 200px;
+  width: 120px;
+  height: 120px;
+}
+
+.edit {
+  font-size: 15pt;
+  font-family: helvetica;
+}
+
+.boxform {
+  font-family: helvetica;
+  font-size: 12pt;
+  text-align: center;
+}

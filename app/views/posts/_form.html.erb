@@ -1,0 +1,21 @@
+<%= form_for(@post , :html => { :id => 'boxform' }) do |f| %>
+<%= "Go on son, write that blog" %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :photo_url %>
+    <%= f.text_field :photo_url %>
+  </p>
+  <p>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </p>
+  <p>
+    <%= f.submit %>
+<% end %>

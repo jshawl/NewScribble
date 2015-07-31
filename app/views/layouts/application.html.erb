@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scribble</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>C Blog</h1>
+  <nav>
+    <% if session[:user] %>
+      <a href="/sign_out"><%= session[:user]["username"] %>: sign out</a></h2>
+    <% else %>
+      <a href="/sign_up">Sign up</a>
+      <a href="/sign_in">Sign in</a>
+    <% end %>
+      <a href="/posts">Posts</a>
+</nav>
+    <h2><%= flash[:notice] %>
+<%= yield %>
+</h1>
+</body>
+</html>

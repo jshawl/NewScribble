@@ -1,0 +1,10 @@
+<h2>Do you even Blog, bro?<%= link_to "(+)", new_post_path %> </h2>
+
+<p>
+  <% @posts.all %>
+  <% @posts.each do |post| %>
+    <ul>
+      <%= link_to post.title, post %>
+    </ul>
+  <% end %>
+</p>

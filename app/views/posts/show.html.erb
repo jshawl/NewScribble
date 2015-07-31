@@ -1,0 +1,39 @@
+<p>
+  <%= @post.title %>
+</p>
+    Author:
+  <%= @post.author %>
+<div>
+    <%= image_tag @post.photo_url %>
+</div>
+  <%= @post.content %>
+</p>
+  <%= link_to "(edit)" , edit_post_path(@post), :class => 'edit' %>
+
+<h3>Comments</h2>
+<h4>
+  <% @post.comments.each do |comment| %>
+  <strong><%= comment.author %>:</strong>
+  <%= comment.text %> <br>
+<% end %>
+</h4>
+
+
+<h3>Add a comment:</h2>
+<p>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+</p>
+<%end%>
+
+<%= link_to 'Back', posts_path %>
