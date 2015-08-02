@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate
+  # nice ^^ !
   def sign_up
   end
 
